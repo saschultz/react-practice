@@ -1,9 +1,9 @@
 var greeting = React.createElement('h1', {}, 'Salut le monde');
 var clock = React.createElement('h2', {}, `It is ${new Date().toLocaleTimeString()}`);
-var app = ('div', {}, greeting, clock);
+var app = React.createElement('div', {}, greeting, clock);
 
 
 ReactDOM.render(
-  greeting,
+  app,
   document.getElementById('react-app-root')
 );
